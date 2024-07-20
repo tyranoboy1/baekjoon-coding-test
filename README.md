@@ -4,4 +4,4 @@
 
 # Level
 
-[• Level1](https://github.com/tyranoboy1/BAEKJOON-CODING-TEST/tree/main/beakjoon/입출력과사칙연산)<br/>
+[• Level1-입출력과사칙연산](https://github.com/tyranoboy1/BAEKJOON-CODING-TEST/tree/main/beakjoon/입출력과사칙연산)<br/>
