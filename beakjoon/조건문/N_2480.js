@@ -31,4 +31,4 @@ const renderReward = () => {
   }
 };
 
-console.log(renderReward());
+console.log(renderReward);
