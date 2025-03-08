@@ -22,3 +22,12 @@ console.log(String.fromCharCode(97)); // 'a'
 ```javascript
 console.log("Hello".repeat(3)); 
 ```
+
+### JS 출력 방법
+```javascript
+// 역슬래시 \
+console.log("\\");
+
+// 큰따옴표 "
+console.log("\"")
+```
