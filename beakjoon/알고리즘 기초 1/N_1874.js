@@ -1,31 +1,33 @@
 let fs = require('fs')
 let path = require('path')
-
 let input = fs.readFileSync(path.join(__dirname, "../../input.txt")).toString().trim().split('\n')
 
-const count = Number(input.shift())
+const n = Number(input.shift())
+input = input.map((ev) => Number(ev))
+let count = 1
+const result = []
+const stack = []
 
-let stack =[]
-let result=''
-let n = 1
-
-for(let i=0; i<count; i++){
-    const m = Number(input[i])
-
-    while(n<=m){
-        stack.push(n);
-        result +='+ ';
-        n += 1;
+for(let i= 0; i < n; i++) {
+    const m = input[i]
+    while(count <= m) {
+        stack.push(count)
+        count += 1
+        result.push('+')
     }
-
-    let num = stack.pop();
-    if(num !== m){
-        result = "NO";
-        break;
+    if(stack[stack.length -1] === m) {
+        stack.pop()
+        result.push('-')
     }
-    result +='- '
+    else {
+        console.log('NO')
+        return
+    }
 }
-console.log(result.split(' ').join('\n'))
+console.log(result.join('\n'))
+
+
+
 
 
 
